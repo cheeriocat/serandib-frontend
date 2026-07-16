@@ -78,7 +78,9 @@ export const Home: React.FC = () => {
     <div>
       {/* Hero Section */}
       <section className="relative h-[90vh] flex items-center justify-center overflow-hidden bg-surface-container-low">
-        <HeroShader />
+        <div className="absolute inset-0 w-full h-full pointer-events-none opacity-80 animate-[pulse_10s_ease-in-out_infinite]">
+          <HeroShader speed={0.35} />
+        </div>
         <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
           <h1 className="font-display-lg text-4xl sm:text-5xl md:text-6xl text-on-surface mb-6 leading-tight">
             Connect. <span className="text-secondary-container">Inspire.</span> Lead.
@@ -309,47 +311,6 @@ export const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* Careers Section */}
-      <section className="py-24 bg-surface-container-low" id="careers">
-        <div className="max-w-[1280px] mx-auto px-6">
-          <div className="bg-surface-container-lowest rounded-3xl p-10 md:p-16 flex flex-col lg:flex-row items-center gap-12 border border-outline-variant/30 shadow-xl">
-            <div className="flex-1">
-              <span className="inline-block px-4 py-1 bg-secondary-container/10 text-secondary rounded-full text-xs font-bold uppercase tracking-widest mb-6">Hiring Now</span>
-              <h2 className="font-headline-lg text-3xl font-bold text-on-surface mb-6">HR Assistant &amp; Receptionist</h2>
-              <p className="text-lg text-on-surface-variant mb-8 leading-relaxed">
-                We are seeking a versatile and professional individual to join our front-of-house team. This dual-role requires exceptional communication skills and a passion for supporting our human capital.
-              </p>
-              <ul className="space-y-4 mb-10">
-                <li className="flex items-center gap-3 text-on-surface font-medium">
-                  <span className="material-symbols-outlined text-primary font-bold">check_circle</span>
-                  Manage front-desk operations and visitor experience
-                </li>
-                <li className="flex items-center gap-3 text-on-surface font-medium">
-                  <span className="material-symbols-outlined text-primary font-bold">check_circle</span>
-                  Support recruitment cycles and document management
-                </li>
-                <li className="flex items-center gap-3 text-on-surface font-medium">
-                  <span className="material-symbols-outlined text-primary font-bold">check_circle</span>
-                  Coordinate internal communications and staff welfare
-                </li>
-              </ul>
-              <Link 
-                to="/contact" 
-                className="px-10 py-4 bg-primary text-on-primary font-bold rounded-lg hover:bg-secondary transition-all shadow-xl shadow-primary/20 inline-block active:scale-95"
-              >
-                Apply Now
-              </Link>
-            </div>
-            <div className="w-full md:w-2/3 lg:w-1/3 aspect-square rounded-2xl overflow-hidden bg-surface p-2 border border-outline-variant shadow-inner">
-              <img 
-                alt="Professional office reception" 
-                className="w-full h-full object-cover rounded-xl" 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9UU92jcGaoBDFjjfV4i1XqKca5P_sXdCGGzI7mXFgUtvVBCLdZCCTUnPzBW4V57znwABktgux_yGKuLbyRhKzcDdBDlmUsWZc0M7r12yfZeP7uT-O9ZR3DLQdxUXpniMxw0TzgtC-KoGEGHpjUnSqln1qK5kBi2hsyP-eUIfr4QSZOr934mtvf2Soqgnou37s5fMCGWGvGnhvDzTJ6HSPqD-KAO_ktjaV4etMWgjAarNHc5lyHzjs"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };
