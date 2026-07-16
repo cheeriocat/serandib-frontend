@@ -9,8 +9,7 @@ export const Navbar: React.FC = () => {
     { name: 'About', path: '/about' },
     { name: 'Events', path: '/events' },
     { name: 'Partners', path: '/partners' },
-    { name: 'Management', path: '/management' },
-    { name: 'Contact', path: '/contact' }
+    { name: 'Management', path: '/management' }
   ];
 
   return (
@@ -45,7 +44,7 @@ export const Navbar: React.FC = () => {
             to="/contact"
             className="ml-4 px-6 py-2 bg-primary text-on-primary text-sm rounded-lg font-bold hover:bg-secondary transition-all shadow-md active:scale-95"
           >
-            Get Started
+            Contact
           </NavLink>
         </div>
 
@@ -86,7 +85,7 @@ export const Navbar: React.FC = () => {
               onClick={() => setIsOpen(false)}
               className="block text-center w-full py-3 bg-primary text-on-primary font-bold rounded-lg shadow-md"
             >
-              Get Started
+              Contact
             </NavLink>
           </div>
         </div>
