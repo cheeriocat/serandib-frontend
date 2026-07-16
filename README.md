@@ -1,4 +1,4 @@
-# Serandib Technologies Revamp
+# Serandib Technologies 
 
 A modern, fast corporate web application for Serandib Technologies rebuilt using **React**, **Vite**, **TypeScript**, and **Tailwind CSS v4**.
 
