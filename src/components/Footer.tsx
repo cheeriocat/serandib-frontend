@@ -30,7 +30,6 @@ export const Footer: React.FC = () => {
             <h4 className="text-on-surface font-bold mb-6">Support</h4>
             <ul className="space-y-3">
               <li><Link className="text-on-surface-variant hover:text-primary transition-all text-sm" to="/contact">Contact</Link></li>
-              <li><Link className="text-on-surface-variant hover:text-primary transition-all text-sm" to="/shader-playground">Shader Playground</Link></li>
               <li><a className="text-on-surface-variant hover:text-primary transition-all text-sm" href="#">Privacy Policy</a></li>
               <li><a className="text-on-surface-variant hover:text-primary transition-all text-sm" href="#">Terms of Service</a></li>
             </ul>
